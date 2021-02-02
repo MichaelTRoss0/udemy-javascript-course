@@ -289,7 +289,6 @@ if (favorite === 23) { // 23 === 23
 }
 
 if (favorite !== 23) console.log('Why not 23?');
-*/
 
 const hasDriversLicense = true // A
 const hasGoodVision = true // B
@@ -312,6 +311,84 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 } else {
     console.log('Someone else should drive...');
 }
+*/
+
+/////////////////////////////////////////////////
+// Coding Challenge #3
+
+/*
+There are two gymnastics teams, Dolphins and Koalas. They compete against each
+other 3 times. The winner with the highest average score wins a trophy!
+Your tasks:
+1. Calculate the average score for each team, using the test data below
+2. Compare the team's average scores to determine the winner of the competition,
+and print it to the console. Don't forget that there can be a draw, so test for that
+as well (draw means they have the same average score)
+3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a
+team only wins if it has a higher score than the other team, and the same time a
+score of at least 100 points. Hint: Use a logical operator to test for minimum
+score, as well as multiple else-if blocks �
+4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when
+both teams have the same score and both have a score greater or equal 100
+points. Otherwise, no team wins the trophy
+Test data:
+§ Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+§ Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+§ Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+GOOD LUCK �
+*/
+
+averageScoreDolphins = (96 + 108 + 89) / 3;
+averageScoreKoalas = (88 + 91 + 110) / 3;
+
+if (averageScoreDolphins > averageScoreKoalas) {
+    console.log('The Dolphins win!');
+} else if (averageScoreKoalas > averageScoreDolphins) {
+    console.log('The Koalas win!');
+} else {
+    console.log("It's a draw!");
+}
+
+averageScoreDolphinsB1 = (97 + 112 + 101) / 3;
+averageScoreKoalasB1 = (109 + 95 + 123) / 3;
+
+if (averageScoreDolphinsB1 > averageScoreKoalasB1 && averageScoreDolphinsB1 >= 100) {
+    console.log('The Dolphins win!');
+} else if (averageScoreKoalasB1 > averageScoreDolphinsB1 && averageScoreKoalasB1 >= 100) {
+    console.log('The Koalas win!');
+} else {
+    console.log("It's a draw!");
+}
+
+averageScoreDolphinsB2 = (97 + 112 + 101) / 3;
+averageScoreKoalasB2 = (109 + 95 + 106) / 3;
+
+if (averageScoreDolphinsB1 > averageScoreKoalasB1 && averageScoreDolphinsB1 >= 100) {
+    console.log('The Dolphins win!');
+} else if (averageScoreKoalasB1 > averageScoreDolphinsB1 && averageScoreKoalasB1 >= 100) {
+    console.log('The Koalas win!');
+} else if (averageScoreDolphinsB2 < 100 && averageScoreKoalasB2 < 100) {
+    console.log('Neither team wins...')
+} else {
+    console.log("It's a draw!");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -338,8 +338,9 @@ Test data:
 GOOD LUCK �
 */
 
-averageScoreDolphins = (96 + 108 + 89) / 3;
-averageScoreKoalas = (88 + 91 + 110) / 3;
+const averageScoreDolphins = (96 + 108 + 89) / 3;
+const averageScoreKoalas = (88 + 91 + 110) / 3;
+console.log(averageScoreDolphins, averageScoreKoalas);
 
 if (averageScoreDolphins > averageScoreKoalas) {
     console.log('The Dolphins win!');
@@ -349,8 +350,9 @@ if (averageScoreDolphins > averageScoreKoalas) {
     console.log("It's a draw!");
 }
 
-averageScoreDolphinsB1 = (97 + 112 + 101) / 3;
-averageScoreKoalasB1 = (109 + 95 + 123) / 3;
+const averageScoreDolphinsB1 = (97 + 112 + 101) / 3;
+const averageScoreKoalasB1 = (109 + 95 + 123) / 3;
+console.log(averageScoreDolphinsB1, averageScoreKoalasB1);
 
 if (averageScoreDolphinsB1 > averageScoreKoalasB1 && averageScoreDolphinsB1 >= 100) {
     console.log('The Dolphins win!');
@@ -360,12 +362,13 @@ if (averageScoreDolphinsB1 > averageScoreKoalasB1 && averageScoreDolphinsB1 >= 1
     console.log("It's a draw!");
 }
 
-averageScoreDolphinsB2 = (97 + 112 + 101) / 3;
-averageScoreKoalasB2 = (109 + 95 + 106) / 3;
+const averageScoreDolphinsB2 = (97 + 112 + 101) / 3;
+const averageScoreKoalasB2 = (109 + 95 + 106) / 3;
+console.log(averageScoreDolphinsB2, averageScoreKoalasB2);
 
-if (averageScoreDolphinsB1 > averageScoreKoalasB1 && averageScoreDolphinsB1 >= 100) {
+if (averageScoreDolphinsB2 > averageScoreKoalasB2 && averageScoreDolphinsB2 >= 100) {
     console.log('The Dolphins win!');
-} else if (averageScoreKoalasB1 > averageScoreDolphinsB1 && averageScoreKoalasB1 >= 100) {
+} else if (averageScoreKoalasB2 > averageScoreDolphinsB2 && averageScoreKoalasB2 >= 100) {
     console.log('The Koalas win!');
 } else if (averageScoreDolphinsB2 < 100 && averageScoreKoalasB2 < 100) {
     console.log('Neither team wins...')

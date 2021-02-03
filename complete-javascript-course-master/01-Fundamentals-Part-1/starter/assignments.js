@@ -1,26 +1,30 @@
-const country = 'United States';
-const continent = 'North America';
+let country = 'United States';
+let continent = 'North America';
 let population = 332; // in millions
-// let population = 130;
 console.log(country);
 console.log(continent);
 console.log(population);
 
-const isIsland = false;
+let isIsland = false;
 let language;
-console.log(isIsland);
-console.log(language);
+console.log(typeof isIsland);
+console.log(typeof population);
+console.log(typeof country);
+console.log(typeof language);
 
 language = 'English';
+// const country = 'United States';
+// const continent = 'North America';
+// const isIsland = false;
 // isIsland = true;
 
-let halvedPopulation = population / 2;
-population += 1;
+console.log(population / 2);
+population++;
 console.log(population);
 console.log(population > 6);
 console.log(population < 33);
-const description = country + ' is in ' + continent + ', and its ' + population + ' million people speak ' + language;
-console.log(description);
+const description1 = country + ' is in ' + continent + ', and its ' + population + ' million people speak ' + language;
+console.log(description1);
 
 const descriptionNew = `${country} is in ${continent}, and its ${population} million people speak ${language}.`;
 console.log(descriptionNew);
@@ -37,14 +41,14 @@ if (population > 33) {
 '123' < 57;                 // false    false
 5 + 6 + '4' + 9 - 4 - 2;    // '1043'   1143
 
-console.log('9' - '5');
-console.log('19' - '13' + '17');
-console.log('19' - '13' + 17);
-console.log('123' < 57);
-console.log(5 + 6 + '4' + 9 - 4 - 2);
+// console.log('9' - '5');
+// console.log('19' - '13' + '17');
+// console.log('19' - '13' + 17);
+// console.log('123' < 57);
+// console.log(5 + 6 + '4' + 9 - 4 - 2);
 
 // const numNeighbors = Number(prompt("How many neighbor countries does your contry have?"));
-numNeighbors = 2;
+const numNeighbors = 2;
 if (numNeighbors === 1) {
     console.log('Only 1 border!');
 } else if (numNeighbors > 1) {
@@ -79,3 +83,5 @@ switch (language) {
     default:
         console.log('Great language too!');
 }
+
+console.log(`${country}'s population is ${population > 33 ? 'above' : 'below'} average`);

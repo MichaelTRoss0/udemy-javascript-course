@@ -7,3 +7,24 @@ const mexico = describeCountry('Mexico', 126, 'Mexico City');
 console.log(unitedStates);
 console.log(canada);
 console.log(mexico);
+
+function percentageOfWorld1(population) {
+    return population / 7900 * 100;
+}
+const percentageUS = percentageOfWorld1(328);
+const percentageCN = percentageOfWorld1(38);
+const percentageMX = percentageOfWorld1(126);
+console.log(percentageUS);
+console.log(percentageCN);
+console.log(percentageMX);
+const percentageOfWorld2 = function (population) {
+    return population / 7900 * 100;
+}
+console.log(percentageOfWorld2(328));
+console.log(percentageOfWorld2(38));
+console.log(percentageOfWorld2(126));
+
+const percentageOfWorld3 = population => population / 7900 * 100;
+console.log(percentageOfWorld3(328));
+console.log(percentageOfWorld3(38));
+console.log(percentageOfWorld3(126));

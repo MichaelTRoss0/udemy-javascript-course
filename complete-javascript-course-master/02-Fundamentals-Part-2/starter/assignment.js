@@ -1,3 +1,5 @@
+'use strict';
+
 function describeCountry(country, population, capitalCity) {
     return `${country} has ${population} million people and its capital city is ${capitalCity}`;
 }
@@ -28,3 +30,10 @@ const percentageOfWorld3 = population => population / 7900 * 100;
 console.log(percentageOfWorld3(328));
 console.log(percentageOfWorld3(38));
 console.log(percentageOfWorld3(126));
+
+function describePopulation(country, population) {
+    return `${country} has a population of ${population} million people, which is about ${percentageOfWorld1(population)}% of the world.`;
+}
+console.log(describePopulation('United States', 328));
+console.log(describePopulation('Canada', 38));
+console.log(describePopulation('Mexico', 126));

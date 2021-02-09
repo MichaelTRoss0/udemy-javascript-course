@@ -98,10 +98,10 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 }
 console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1950, 'Mike'));
-*/
+
 
 // Coding Challenge #1
-const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+const calcAverage = (a, b, c) => (a + b + c) / 3;
 const avgDolphins = calcAverage(44, 23, 71);
 const avgKoalas = calcAverage(65, 54, 49);
 function checkWinner(avgDolphins, avgKoalas) {
@@ -117,3 +117,42 @@ checkWinner(avgDolphins, avgKoalas);
 const avgDolphins2 = calcAverage(85, 54, 41);
 const avgKoalas2 = calcAverage(23, 34, 27);
 checkWinner(avgDolphins2, avgKoalas2);
+*/
+
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+
+const y = new Array(1991, 1984, 2008, 2020);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'Jay';
+console.log(friends);
+// friends = ['Bob', 'Alice'];
+
+const firstName = 'Jonas';
+const jonas = [firstName, 'Schmedtmann', 2037 - 1991, 'teacher', friends];
+console.log(jonas);
+console.log(jonas.length);
+
+// Exercise
+function calcAge1(birthYear) {
+    return 2037 - birthYear;
+}
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge1(years[0]);
+const age2 = calcAge1(years[1]);
+const age3 = calcAge1(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [calcAge1(years[0]), calcAge1(years[1]), calcAge1(years[years.length - 1])];
+console.log(ages);

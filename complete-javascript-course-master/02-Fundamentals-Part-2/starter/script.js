@@ -156,7 +156,7 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge1(years[0]), calcAge1(years[1]), calcAge1(years[years.length - 1])];
 console.log(ages);
-*/
+
 
 const friends = ['Michael', 'Steven', 'Peter'];
 
@@ -188,3 +188,16 @@ console.log(friends.includes(23));
 if (friends.includes('Steven')) {
     console.log('You have a friend called Steven');
 }
+*/
+
+// Coding Challenge #2
+function calcTip(bill) {
+    return 50 <= bill && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+console.log(calcTip(100));
+const bills = [125, 555, 44];
+console.log(bills);
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+console.log(tips);
+const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(total);

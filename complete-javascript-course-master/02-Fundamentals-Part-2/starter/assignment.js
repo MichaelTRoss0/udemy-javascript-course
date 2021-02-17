@@ -42,3 +42,12 @@ const populations = [328, 38, 126, 56]; // United States, Canada, Mexico, Englan
 console.log(populations.length === 4);
 const percentages = [percentageOfWorld1(328), percentageOfWorld1(38), percentageOfWorld1(126), percentageOfWorld1(56)];
 console.log(percentages);
+
+var neighbors = ['Canada', 'Mexico'];
+neighbors.push('Utopia');
+neighbors.pop();
+if (!neighbors.includes('Germany')) {
+    console.log('Probably not a central European country :D')
+}
+neighbors[0] = 'Parliamentary Democracy of Canada';
+

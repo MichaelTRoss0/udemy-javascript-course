@@ -79,3 +79,11 @@ console.log(myCountry.isIsland);
 for (let i = 1; i <= 50; i++) {
     console.log(`Voter number ${i} is currently voting`)
 }
+
+// const populations = [328, 38, 126, 56];
+// United States, Canada, Mexico, England
+let percentages2 = [];
+for (let i = 0; i < populations.length; i++) {
+    percentages2[i] = percentageOfWorld1(populations[i]);
+    console.log(percentages2[i], percentages[i]);
+}

@@ -94,3 +94,12 @@ for (let i = 0; i < listOfNeighbors.length; i++) {
         console.log(listOfNeighbors[i][j]);
     }
 }
+
+let percentages3 = [];
+let i = 0;
+while (i < populations.length) {
+    percentages2[i] = percentageOfWorld1(populations[i]);
+    console.log(percentages2[i], percentages[i]);
+    i++;
+}
+

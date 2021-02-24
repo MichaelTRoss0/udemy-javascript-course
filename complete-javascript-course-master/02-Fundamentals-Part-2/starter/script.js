@@ -404,7 +404,7 @@ for (let exercise = 1; exercise <= 3; exercise++) {
         console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏋️‍♂️`);
     }
 }
-*/
+
 
 // for (let rep = 1; rep <= 10; rep++) {
 //     console.log(`Lifting weights repetition ${rep} 🏋️‍♂️`);
@@ -424,5 +424,19 @@ while (dice !== 6) {
     dice = Math.trunc(Math.random() * 6) + 1;
     if (dice === 6) console.log('Loop is about to end ...');
 }
+*/
 
+// Coding Challenge #4
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+let tips = [];
+let totals = [];
 
+function calcTip(bill) {
+    return 50 <= bill && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+for (let i = 0; i < bills.length; i++) {
+    tips[i] = calcTip(bills[i]);
+    totals[i] = tips[i] + bills[i];
+    console.log(bills[i], tips[i], totals[i]);
+}
